@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Seguidores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comparador de Seguidores</h1>
+
+        <!-- Cargar archivo de seguidores -->
+        <div>
+            <label for="followersFile">Inserte su archivo .json con los seguidores:</label>
+            <input type="file" id="followersFile" accept=".json">
+        </div>
+
+        <!-- Cargar archivo de seguidos -->
+        <div>
+            <label for="followingFile">Inserte el archivo .json con los seguidos:</label>
+            <input type="file" id="followingFile" accept=".json">
+        </div>
+
+        <!-- Botón para procesar los archivos -->
+        <button id="compareButton" disabled>Comparar</button>
+
+        <!-- Mostrar el resultado -->
+        <div id="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
